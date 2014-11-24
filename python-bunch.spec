@@ -13,9 +13,9 @@ Source0:	http://pypi.python.org/packages/source/b/bunch/bunch-%{version}.tar.gz
 # Source0-md5:	0a829d64e95ed96defbcae2bf9061bb0
 URL:		http://github.com/dsc/bunch
 BuildRequires:	dos2unix
-BuildRequires:	python-devel
 BuildRequires:	python-nose
 BuildRequires:	python-setuptools
+BuildRequires:	rpm-pythonprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
