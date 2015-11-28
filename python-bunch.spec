@@ -32,7 +32,7 @@ recursively converts from a dict to a Bunch.
 dos2unix LICENSE.txt README.rst
 
 %build
-%{__python} setup.py build
+%py_build
 
 %if %{with tests}
 PYTHONPATH=build/lib nosetests-%{py_ver} --with-doctest
@@ -41,10 +41,7 @@ PYTHONPATH=build/lib %{__python} build/lib/bunch/test.py
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 rm $RPM_BUILD_ROOT%{py_sitescriptdir}/bunch/test.*
 
