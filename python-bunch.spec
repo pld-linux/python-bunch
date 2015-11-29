@@ -12,6 +12,7 @@ Group:		Development/Languages
 Source0:	http://pypi.python.org/packages/source/b/bunch/bunch-%{version}.tar.gz
 # Source0-md5:	0a829d64e95ed96defbcae2bf9061bb0
 URL:		http://github.com/dsc/bunch
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	dos2unix
 BuildRequires:	python-nose
 BuildRequires:	python-setuptools
