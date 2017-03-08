@@ -6,7 +6,7 @@
 Summary:	Python dictionary with attribute-style access
 Name:		python-bunch
 Version:	1.0.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages
 Source0:	http://pypi.python.org/packages/source/b/bunch/bunch-%{version}.tar.gz
@@ -36,8 +36,8 @@ dos2unix LICENSE.txt README.rst
 %py_build
 
 %if %{with tests}
-PYTHONPATH=build/lib nosetests-%{py_ver} --with-doctest
-PYTHONPATH=build/lib %{__python} build/lib/bunch/test.py
+PYTHONPATH=buidl-2/lib nosetests-%{py_ver} --with-doctest
+PYTHONPATH=build-2/lib %{__python} build-2/lib/bunch/test.py
 %endif
 
 %install
